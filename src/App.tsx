@@ -1,14 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React from 'react'
+import {
+    createBrowserRouter,
+    RouterProvider,
+    createRoutesFromElements,
+    Route,
+    HashRouter,
+    createHashRouter,
+  } from 'react-router-dom';
+import Root from './components/Layout/Root';
+import Page404 from './pages/Page404';
+import Dashboard from './pages/Dashboard';
 function App() {
-  const [count, setCount] = useState(0)
+
+    const router = createHashRouter(
+        createRoutesFromElements(
+            <Route element={<Root/>} errorElement={<Page404/>}>
+                <Route path='/' element={<Dashboard/>}/>
+                <Route path='*' element={<Page404/>}/>
+
+            </Route>
+            // <Route path='/' element={}
+        )
+    );
 
   return (
     <>
-      Hi
+        <RouterProvider router={router}/>
     </>
   )
 }
