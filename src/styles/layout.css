@@ -16,11 +16,33 @@ body {
 }
 
 .layout-footer {
+  padding: 0.4rem;
+  margin: 0;
+  list-style: none;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fefaff;
+  gap: 3rem;
+
+  
+  a{
+    color: #999999;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li{
+    
+
+    span{
+      font-size: 0.8rem;
+      color: #999999;
+    }
+  }
 }
 
 .header-logo {
@@ -28,7 +50,7 @@ body {
 }
 
 .container-content {
-  background-color: #83209b;
+  background-color: #FEFAFF;
   /* background-color: #FEFAFF; */
   width: 100%;
 
@@ -61,7 +83,6 @@ body {
 }
 
 .headerMovile {
-  background-color: #2e202f;
 
   BurguerMenu {
     flex: 1;
@@ -113,6 +134,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #FEFAFF;
 }
 
 .menu {
