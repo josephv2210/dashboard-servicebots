@@ -3,9 +3,10 @@ import { Outlet } from "react-router-dom";
 import MainMenu from "./MainMenu";
 import MainHeader from "./MainHeader";
 import { useWebContext } from '../../hooks/useWebContext'
+import  Footer  from './Footer'
 
 function Root() {
-  const { Content, Footer } = Layout;
+  const { Content} = Layout;
   
   const { isMobile } = useWebContext();
 
@@ -18,7 +19,7 @@ function Root() {
           <Content className="content">
             <Outlet />
           </Content>
-            <Footer className="layout-footer">footer</Footer>
+            <Footer />
         </div>
       </Layout>
     </Layout>
