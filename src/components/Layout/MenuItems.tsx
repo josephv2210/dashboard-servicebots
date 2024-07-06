@@ -1,57 +1,59 @@
+
+// import { useNavigate } from "react-router-dom";
+
 import {
-  RobotOutlined,
-  CommentOutlined,
-  BarChartOutlined,
-  SettingOutlined,
-  LogoutOutlined,
-  HomeOutlined,
-  FormOutlined,
-  CarOutlined,
-} from "@ant-design/icons";
+  LayoutDashboard,
+  BotMessageSquare,
+  MessageCircleMore,
+  UsersRound,
+} from "lucide-react";
 
-import { LayoutDashboard } from "lucide-react";
+// const navigate = useNavigate();
 
-const adminData = [
+const dashboard = [
   {
-    label: "Settings",
-    key: "settings",
-    icon: <SettingOutlined style={{ fontSize: 20 }} />,
+    label: "Dashboard",
+    key: "dashboard",
+    icon: <LayoutDashboard size={34} color="#999999" />,
     children: [],
   },
 ];
 
-const form = [
+// const dashboardMovil = [
+//   {
+//     label: (
+//       <span onClick={() => navigate('/dashboard')}>
+//         <LayoutDashboard size={34} color="#999999" />
+//         Dashboard
+//       </span>
+//     ),
+//     key: "dashboard",
+//   },
+// ];
+
+const quizAi = [
   {
-    label: "Permisos",
-    key: "permissions",
-    icon: <FormOutlined style={{ fontSize: 20 }} />,
+    label: "Cuestionario AI",
+    key: "quizAi",
+    icon: <BotMessageSquare size={34} color="#999999" />,
     children: [],
   },
 ];
 
-const reports = [
+const chat = [
   {
-    label: "Reports",
-    key: "reports",
-    icon: <BarChartOutlined style={{ fontSize: 20 }} />,
+    label: "Chat",
+    key: "chat",
+    icon: <MessageCircleMore size={34} color="#999999" />,
     children: [],
   },
 ];
 
-const home = [
+const agents = [
   {
-    label: "Home",
-    key: "/",
-    icon: <LayoutDashboard style={{ fontSize: 20 }} />,
-    children: [],
-  },
-];
-
-const assets = [
-  {
-    label: "Assets",
-    key: "assets-settings",
-    icon: <CarOutlined style={{ fontSize: 20 }} />,
+    label: "Agentes",
+    key: "agents",
+    icon: <UsersRound size={34} color="#999999" />,
     children: [],
   },
 ];
@@ -73,25 +75,20 @@ const getItem = (
     disabled,
   };
 };
-
-const formItem = form.map((item) => {
+const dashboardItem = dashboard.map((item) => {
   return getItem(item.label, item.key, item.icon);
 });
 
-const reportsItem = reports.map((item) => {
+const quizAiItem = quizAi.map((item) => {
   return getItem(item.label, item.key, item.icon);
 });
 
-const adminItem = adminData.map((item) => {
+const chatItem = chat.map((item) => {
   return getItem(item.label, item.key, item.icon);
 });
 
-const homeItem = home.map((item) => {
+const agentsItem = agents.map((item) => {
   return getItem(item.label, item.key, item.icon);
 });
 
-const assetsItem = assets.map((item) => {
-  return getItem(item.label, item.key, item.icon);
-});
-
-export { formItem, adminItem, reportsItem, homeItem, assetsItem };
+export {  quizAiItem, chatItem, dashboardItem, agentsItem };

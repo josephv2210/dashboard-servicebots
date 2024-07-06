@@ -1,15 +1,20 @@
-import React from "react";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
-import type { MenuProps } from "antd";
-import logo from "./../../assets/png/logo.png"
-const { Header, Content, Sider } = Layout;
+import { Layout } from "antd";
+import logo from "./../../assets/png/logo.png";
+const { Header } = Layout;
+import { useWebContext } from "../../hooks/useWebContext";
 
+import BurguerMenu from "./BurguerMenu";
 function MainHeader() {
+  const { isMobile } = useWebContext();
+
   return (
-    <Header className="header">
-        <img src={logo} alt="" className="header-logo"/>
+    <Header className={`header ${isMobile && "headerMovile"}`}>
+      {isMobile && <BurguerMenu />}
+      <div className="header-logo-container">
+        <img src={logo} alt="" className="header-logo" />
+      </div>
     </Header>
-  )
+  );
 }
 
-export default MainHeader
+export default MainHeader;

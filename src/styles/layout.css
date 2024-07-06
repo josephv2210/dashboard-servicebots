@@ -51,6 +51,25 @@ body {
   border-bottom-width: 1px;
   border-bottom-color: rgba(5, 5, 5, 0.06);
   width: 100%;
+
+  .header-logo-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.headerMovile {
+  background-color: #2e202f;
+
+  BurguerMenu {
+    flex: 1;
+  }
+
+  .header-logo-container {
+    flex: 3;
+  }
 }
 
 .menu-content {
@@ -62,6 +81,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.ant-menu{
+  gap: 1rem;
 }
 
 .sider-content {
@@ -124,4 +147,22 @@ body {
 
 .appVersion {
   text-align: center;
+}
+
+:where(.css-dev-only-do-not-override-f7vrd6).ant-menu .ant-menu-item,
+:where(.css-dev-only-do-not-override-f7vrd6).ant-menu .ant-menu-submenu-title {
+  white-space: inherit;
+}
+
+.ant-menu-item {
+  padding: 3px 0;
+}
+
+.ant-menu-item-selected {
+  background-color: #f5e5f5 !important;
+
+  svg {
+    opacity: 100%;
+    stroke: #632973;
+  }
 }
