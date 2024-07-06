@@ -1,0 +1,12 @@
+.menu-items-movil{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    /* justify-content: center; */
+}
+
+:where(.css-dev-only-do-not-override-f7vrd6).ant-layout-header{
+    line-height: inherit !important;
+}
