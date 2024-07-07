@@ -1,4 +1,3 @@
-import React from "react";
 import SingleCard from "../components/dashboards/SingleCard";
 import ChatsCard from "../components/dashboards/ChatsCard";
 import ComparativeChart from "../components/dashboards/ComparativeChart";

@@ -1,20 +1,9 @@
-import React, { FC } from "react";
-import { DownOutlined } from "@ant-design/icons";
-import type { MenuProps } from "antd";
+import { FC } from "react";
 import { Dropdown, Space } from "antd";
 import { Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 import { quizAiItem, chatItem, agentsItem, dashboardItem } from "./MenuItems";
-
-interface menuItems {
-  label: string,
-  key: string,
-  icon: any,
-  children?: [],
-  type?: any,
-  disabled?: boolean
-}
 
 const itemsList = [dashboardItem[0], quizAiItem[0], chatItem[0], agentsItem[0]];
 
