@@ -2,6 +2,8 @@
 @import "./styles/headerStyle.css";
 @import "./styles/comingSoonStyle.css";
 @import "./styles/errorPageStyle.css";
+@import "./styles/dashboardStyle.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
