@@ -2,14 +2,7 @@ body {
   margin: 0;
 }
 
-:where(.css-f7vrd6).ant-layout .ant-layout-sider-children .ant-menu.ant-menu-inline-collapsed{
-  width: calc('auto' + 1rem);
-}
 
-.ant-space-item{
-  display: flex;
-  align-content: center;
-}
 
 .layout-container {
   background-color: #ffffff;
@@ -198,4 +191,14 @@ body {
     opacity: 100%;
     stroke: #632973;
   }
+}
+
+.ant-menu-item{
+  width: 50%;
+}
+
+.ant-space-item{
+
+  display: flex;
+  align-items: center;
 }
