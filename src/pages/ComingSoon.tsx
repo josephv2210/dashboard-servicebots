@@ -1,4 +1,3 @@
-import React from "react";
 import ComingSoonImage from "./../assets/svg/coming-soon-image.svg";
 import { useWebContext } from '../hooks/useWebContext'
 
