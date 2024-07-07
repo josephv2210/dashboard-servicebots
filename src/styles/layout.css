@@ -2,6 +2,15 @@ body {
   margin: 0;
 }
 
+:where(.css-f7vrd6).ant-layout .ant-layout-sider-children .ant-menu.ant-menu-inline-collapsed{
+  width: calc('auto' + 1rem);
+}
+
+.ant-space-item{
+  display: flex;
+  align-content: center;
+}
+
 .layout-container {
   background-color: #ffffff;
   height: 100%;
